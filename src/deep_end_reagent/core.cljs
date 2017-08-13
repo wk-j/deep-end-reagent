@@ -35,15 +35,13 @@
             [:ul.list-group
               (map item videos)]]
           [:div.pane
-            [:strong (get @current-video :source)]
-            [:iframe {:style {:border 0}} :title "video" :width 550 :height 315 :src (get @current-video :source)]]]
+            [:iframe {:style {:border 0} :title "video" :width 560 :height 315 :src (get @current-video :source)}]]]
         [:footer.toolbar.toolbar-footer
           [:h1.title]]])
 
 (defn home-page []
   [:div 
-    [deep-end]
-    [:h2 "Welcome to Jw"]])
+    [deep-end]])
 
 ;; -------------------------
 ;; Initialize app

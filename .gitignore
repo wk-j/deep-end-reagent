@@ -15,3 +15,5 @@ pom.xml.asc
 *.log
 /.env
 node_modules
+builds
+.DS_Store

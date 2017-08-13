@@ -1,14 +1,17 @@
 {
   "name": "deep-end-reagent",
+  "productName": "DE REAGENT @2017",
   "version": "1.0.0",
   "description": "To start the Figwheel compiler, navigate to the project folder and run the following command in the terminal:",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "package": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=public/images/large-round.icns --prune=true --out=builds"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "photonkit": "^0.1.2"
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^1.6.11",
+    "electron-packager": "^8.7.2"
   }
 }
