@@ -16,7 +16,9 @@
   #(swap! current-video (fn [] video)))
 
 (defn item [video]
-  [:li.list-group-item {:key (get video :source) :on-click (play video)}
+  [:li {:key (get video :source) 
+        :on-click (play video) 
+        :class (if (= (get video :source) (get @current-video :source)) "list-group-item active" "list-group-item")}
     [:img.img-circle.media-object.pull-left {:src "images/large-round.png" :width 32 :height 32}]
     [:div.media-body
       [:strong (get video :title)]
